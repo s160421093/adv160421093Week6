@@ -1,6 +1,7 @@
 package com.ubaya.adv160421093week6.model
 
 data class Laptop(
+    var id: String?,
     val brand: String?,
     val model: String?,
     val processor: String?,
