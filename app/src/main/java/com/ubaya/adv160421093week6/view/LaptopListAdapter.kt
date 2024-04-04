@@ -24,8 +24,11 @@ class LaptopListAdapter(val LaptopList:ArrayList<Laptop>)
         holder.binding.txtID.text = LaptopList[position].id
         holder.binding.txtBrand.text = LaptopList[position].brand
         holder.binding.txtModel.text = LaptopList[position].model
-        holder.binding.txtIngredients.text = LaptopList[position].ingredients.toString()
-        holder.binding.txtExtras.text = LaptopList[position].extras.toString()
+        holder.binding.txtProcessor.text = LaptopList[position].processor
+        holder.binding.txtRam.text = LaptopList[position].ram
+        holder.binding.txtStorage.text = LaptopList[position].storage
+        holder.binding.txtFeatures.text = LaptopList[position].features.toString()
+        holder.binding.txtPorts.text = LaptopList[position].ports.toString()
     }
     fun updateLaptopList(newLaptopList: ArrayList<Laptop>) {
         LaptopList.clear()
